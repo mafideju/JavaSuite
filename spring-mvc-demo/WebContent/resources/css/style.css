@@ -1,0 +1,57 @@
+.container {
+	color: white;
+	background-color: #555;
+	margin: 0 auto;
+	width: 50rem;
+	box-sizing: border-box;
+}
+
+.button {
+	width: 100%;
+	height: 2rem;
+}
+
+.button:hover {
+	color: white;
+	background-color: #001;
+	border-radius: 5px;
+}
+
+.form {
+	width: 100%;
+}
+
+.form-input {
+	width: calc(100% - 10px);
+	height: 2rem;
+	margin: 1rem auto;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.title {
+	font-size: 1.2rem;
+}
+
+.content {
+	background-color: #ccc;
+	border: 1px black solid;
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+.content__name {
+	background-color: #555;
+	border: 1px black solid;
+	border-radius: 5px;
+	margin-bottom: 1px;
+	padding: 1rem;
+}
+
+.content__message {
+	background-color: #555;
+	border: 1px black solid;
+	border-radius: 5px;
+	padding: 1rem;
+}
