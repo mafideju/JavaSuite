@@ -1,0 +1,23 @@
+package com.lu2code.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SpringHelloApp {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		Coach baseballCoach = context.getBean("baseballCoach", Coach.class);
+		Coach footballCoach = context.getBean("footballCoach", Coach.class);
+		Coach basketballCoach = context.getBean("basketballCoach", Coach.class);
+		
+		System.out.println(baseballCoach.getDailyWorkout());
+//		System.out.println(baseballCoach.getDailyFortune());
+		
+		System.out.println(footballCoach.getDailyWorkout());
+		System.out.println(basketballCoach.getDailyWorkout());
+		
+		context.close();
+	}
+
+}

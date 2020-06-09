@@ -1,0 +1,18 @@
+package com.lu2code.springdemo;
+
+public class FootballCoach implements Coach {
+	private FortuneService fortuneService;
+	public FootballCoach(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
+	}
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Técnico de Futebol";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return fortuneService.getFortune();
+	}
+}

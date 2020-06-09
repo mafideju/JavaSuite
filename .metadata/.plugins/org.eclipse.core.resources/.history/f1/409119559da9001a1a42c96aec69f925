@@ -1,0 +1,9 @@
+package com.lu2code.springdemo;
+
+public class FootballCoach implements Coach {
+	
+	@Override
+	public String getDailyWorkout() {
+		return "É Gol, de Pelé";
+	}
+}

@@ -1,0 +1,10 @@
+package com.lu2code.springdemo;
+
+public class HappyFortuneService implements FortuneService {
+
+	@Override
+	public String getFortuneService() {
+		return "Dia de Sorte, hein Cabron!";
+	}
+
+}

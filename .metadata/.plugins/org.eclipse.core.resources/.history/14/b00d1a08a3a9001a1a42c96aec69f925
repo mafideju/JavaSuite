@@ -1,0 +1,16 @@
+package com.lu2code.springdemo;
+
+public class TrackCoach implements Coach {
+
+	@Override
+	public String getDailyWorkout() {
+		
+		return "public String getDailyWorkout";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return "public String getDailyFortune";
+	}
+
+}

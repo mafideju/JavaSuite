@@ -1,0 +1,3 @@
+module springdemoone {
+	requires spring.context;
+}

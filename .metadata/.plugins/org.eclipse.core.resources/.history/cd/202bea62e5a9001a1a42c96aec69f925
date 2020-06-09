@@ -1,0 +1,28 @@
+package com.luv2code.springdemo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class TennisCoach implements Coach {
+	// FIELD
+	private FortuneService fortuneService;
+	
+	// SERVICE
+	public TennisCoach(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
+	}
+
+	// METHODS
+	@Override
+	public String getDailyWorkout() {
+
+		return "Tennis Coach Response";
+	}
+
+	@Override
+	public String getDailyFortune() {
+
+		return fortuneService.getFortune();
+	}
+
+}

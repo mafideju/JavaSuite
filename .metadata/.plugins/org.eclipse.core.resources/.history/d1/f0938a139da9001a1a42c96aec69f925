@@ -1,0 +1,9 @@
+package com.lu2code.springdemo;
+
+public class BasketballCoach implements Coach {
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Vai pra cesta Michael Jordan!";
+	}
+}

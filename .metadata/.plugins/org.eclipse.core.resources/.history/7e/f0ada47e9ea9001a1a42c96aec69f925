@@ -1,0 +1,16 @@
+package com.lu2code.springdemo;
+
+public class BaseballCoach implements Coach {
+	
+	@Override
+	public String getDailyWorkout() {
+		
+		return "Técnico de Baseball";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		
+		return "Home Run de Babe Ruth";
+	}
+}
