@@ -12,6 +12,7 @@
 			</div>
 			<div class="content__message">
 				<p>${message}</p>
+				<p>${pageContext.request.contextPath}</p>
 			</div>
 		</section>
 	</body>
