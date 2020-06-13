@@ -12,11 +12,12 @@ public class TestJdbc {
 		String pass = "hbstudent";
 		
 		try {
+			
 			System.out.println("DATABASE " + jdbcUrl);
 			
 			Connection myConn = DriverManager.getConnection(jdbcUrl, user, pass);
 			
-			System.out.println("CONECTADO" + myConn);
+			System.out.println("CONECTADO " + myConn);
 			
 		} catch(Exception exc) {
 			
